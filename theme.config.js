@@ -5,9 +5,7 @@ export default {
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">plugins.chat</span>
-      <span className="text-gray-600 font-normal hidden md:inline">
-        extend conversational UI
-      </span>
+      <span className="text-gray-600 font-normal hidden md:inline"></span>
     </>
   ),
   head: (
@@ -25,17 +23,14 @@ export default {
         content="plugins.chat: the Next.js site builder"
       />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:image"
-        content="https://plugins.chat.vercel.app/og.png"
-      />
-      <meta name="twitter:site:domain" content="plugins.chat.vercel.app" />
-      <meta name="twitter:url" content="https://plugins.chat.vercel.app" />
+      <meta name="twitter:image" content="https://plugins.chat/og.png" />
+      <meta name="twitter:site:domain" content="plugins.chat" />
+      <meta name="twitter:url" content="https://plugins.chat" />
       <meta
         name="og:title"
         content="plugins.chat: Next.js static site generator"
       />
-      <meta name="og:image" content="https://plugins.chat.vercel.app/og.png" />
+      <meta name="og:image" content="https://plugins.chat/og.png" />
       <meta name="apple-mobile-web-app-title" content="plugins.chat" />
       <link
         rel="apple-touch-icon"
@@ -74,6 +69,13 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © plugins.chat.</>,
+  footerText: (
+    <>
+      MIT {new Date().getFullYear()} © {` `}
+      <a href="https://hack.dance" target="_blank" rel="noopener noreferrer">
+        Hack Dance
+      </a>
+    </>
+  ),
   unstable_faviconGlyph: '👋',
 }
